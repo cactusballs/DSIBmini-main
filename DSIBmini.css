@@ -1,0 +1,469 @@
+
+
+html{
+  background-color: white;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+  padding:0
+
+}
+body{
+  font-family: 'Spartan', 'Futura', sans-serif;
+  font-size: 1em;
+  color:  #254252;
+  text-align: center;
+
+}
+
+  /* navbar */
+  /* navbar */
+  /* navbar */
+
+li {
+  list-style: none;
+}
+
+.header a {
+  text-decoration: none;
+  color: rgb(35, 58, 108);
+  
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.hamburger{
+  display: none;
+
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(35, 58, 108);
+  font-size: 1.25rem;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover {
+  color: #475569;
+}
+
+.nav-logo {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(35, 58, 108);
+}
+
+
+/* landing page */
+/* landing page */
+/* landing page */
+
+.shape1 {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-color:rgb(255,142,0);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.dsib{
+  color:rgba(2,54,83);
+  font-size: 6vw;
+  margin-left: 5%;
+  margin-top: 60px;
+  text-align: left;
+
+}
+
+.dsib2{
+  color:rgba(2,54,83, 0.8);
+  font-size: 6vw;
+  margin-left: 5%;
+  margin-top: 0;
+  padding:0;
+  text-align: left;
+
+}
+
+.dsib3{
+  color: rgba(2,54,83, 0.7);
+  font-size: 6vw;
+  margin-left: 5%;
+  margin-top:0;
+  padding:0;
+  margin-bottom: 20%;
+  text-align: left;
+
+
+}
+
+
+/* About */
+/* About */
+/* About */
+
+#about{
+  background-color: rgba(2, 54, 83, 0.8);
+  color: white;
+  padding: 1px;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  height: 60%;
+  width: 100vw;
+}
+
+#about h1{
+  text-align: left;
+  font-size: 2vw;
+  margin-left: 1%;
+  margin-top: 6vh;
+  
+}
+
+#about p {
+  text-align: center;
+  font-size: 1rem;
+
+
+  
+}
+
+#about h4 {
+  text-align: center;
+  margin-top: 0%;
+  font-size: 1rem;
+  
+}
+
+#about a {
+  color:aliceblue;
+}
+
+
+/* Div for magic box  */
+/* Div for magic box  */
+/* Div for magic box  */
+
+#magicButton h2{
+  margin-left: 2%;
+  
+}
+
+#wrapper {
+  text-align:  center;
+  margin: 10% auto auto auto;
+  width: 60vw;
+  border: 10px solid rgb(255,142,0);
+  padding: 10px;
+  margin-top: 10vh;
+  margin-bottom: 25vh;
+}
+
+#wrapper h5{
+  color: rgba(2,54,83);
+
+
+}
+button{
+  font-family: 'Spartan', 'Futura', sans-serif; 
+  height: 3rem;
+  width: 5rem;
+  color:  rgba(2,54,83);
+  background-color: rgb(222,164,80);
+}
+
+#outputDiv {
+  color:rgba(2,54,83, 0.8);
+}
+/* Div for Spot */
+/* Div for Spot */
+/* Div for Spot */
+
+#wrapbreath{
+  background-color: rgba(2,54,83);
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  display: grid;
+  width: 100vw;
+
+ 
+}
+#breathing{
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  display: grid;
+  /* justify-content: center; */
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  /* width: 100vw; */
+
+}
+
+#breathing h2, h4 {
+  margin-left: 2%;
+}
+video{
+height: 40%;
+width: 50vw;
+overflow: hidden;
+justify-self: center;
+margin-top: 12vh;
+
+}
+
+/* Div for Gallery */
+/* Div for Gallery */
+/* Div for Gallery */
+
+#screensavers{
+  margin-left: 2%;
+}
+#imageGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryImage {
+ 
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#expandedImageContainer {
+  display: none;
+
+}
+
+#expandedImage {
+  margin: 0 25%;
+  width: 50vw;
+  max-height: auto;
+  justify-self: center;
+}
+
+/* Div for Resources */
+/* Div for Resources */
+/* Div for Resources */
+
+#resourcesSect{
+  width: 100%;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+  height: 50vh;
+}
+
+
+.resourceGrid{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  padding:10px;
+  margin-left: 10%;
+  width: 75%;
+  
+}
+
+.resource{
+  font-size: 1rem;
+  background-color:rgba(251, 125, 168, 0.75);
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+.resource a {
+  color: white;
+}
+
+.resourceGrid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer below  */
+/* Footer below  */
+/* Footer below  */
+
+
+footer{
+  bottom: 0%;
+  position: absolute;
+}
+
+/* Media Queries */
+/* Media Queries */
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+
+  body{
+    text-align: center;
+   }
+  .nav-menu {
+    position: fixed;
+    left: -110%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0,0,0,0.5);
+
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+
+  .nav-item{
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+ 
+  .resourceGrid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin-left: 5%;
+  }
+ 
+  #about h1 {
+    text-align: center;
+    font-size: 3vw;
+    margin-left: 0;
+  }
+ 
+}
+
+
+@media only screen and (min-width: 1200px) {
+  #about {
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+  }
+
+  #about h1{
+    text-align: left;
+    font-size: 2vw;
+    margin-left: 1%;
+  }
+  #about p {
+    margin: 2% 10%;
+    text-align: center;
+  }
+
+ 
+
+}
+
+
+@media only screen and (max-width: 768px) {
+ body{
+  text-align: center;
+ }
+  #about h1 {
+    font-size: 4vw; /* Adjust as needed */
+    margin-top: 3vh;
+  }
+
+ 
+  .resourceGrid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin-left: 5%;
+  }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+
+  body {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    text-align: center;
+  }
+
+  button{
+     border: none;
+     
+  }
+ 
+
+  .wrapper {
+    width: 80%; /* Adjust width of wrapper for smaller screens */
+  }
+
+  #about h1 {
+    font-size: 5vw; /* Adjust as needed */
+  }
+
+  .resource {
+    width: 100%;
+  }
+
+  .resourceGrid {
+    grid-gap: 20px;
+  }
+}

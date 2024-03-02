@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Don't Smoke, it's bad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="DSIBmini.css" type="text/css" rel="stylesheet">
+    <script src="DSIBmini.js" async></script>
+  </head>
+
+
+
+<body>
+
+<!-- header and nav -->
+<!-- header and nav -->
+<!-- header and nav -->
+
+  <header class = "header">
+    <nav class="navbar">
+      <a href="#" class="nav label">DSIB</a>
+      <ul class="nav-menu">
+       <li class="nav-item">
+        <a href="#about" class="nav-link">About</a>
+       </li>
+       <li class="nav-item"><a href="#magicButton" class="nav-link">A reminder</a></li>
+       <li class="nav-item">
+        <a href="#breathing" class="nav-link">Spot the Breathing Dog</a>
+        <li class="nav-item"> <a href="#screenSavers" class="nav-link">Savers</a> </li>
+        <li class="nav-item"> <a href="#resourceSect" class="nav-link">Resources</a> </li>
+       </li>
+     </ul>
+     <div class="hamburger">
+      <button label="navigation menu">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+      </button>
+     </div>
+    </nav>
+  </header>
+
+  <main>
+
+<!-- hero banner/landing -->
+<!-- hero banner/landing -->
+<!-- hero banner/landing -->
+
+    <div class="landing">
+        <div class="shape1"></div>
+        <h1 class="dsib">Don't Smoke, It's bad</h1>
+        <h1 class="dsib2">Don't Smoke, It's bad</h1>
+        <h1 class="dsib3">Don't Smoke, It's bad</h1>
+    </div>
+  
+  <!-- about -->
+  <!-- about -->
+  <!-- about -->
+
+    <div id="about">
+      <h1>This website is...</h1>
+      
+      <p> a pit stop for when nicotine cravings hit.<br>
+         Here you'll find interactive support for staying hot and cigarette free.
+        We have a magic button that will slightly bully you with reminders of why you've quit smoking, we've also provided a pal for you to breath with and that guy is always there, breathing freely, which you won't be able to do if you smoke.
+        
+        There's saveable screensavers for mobile and desktop.
+        <br>
+        and we've included some links to actual resources from, like, the NHS. 
+        
+        But I know when I quit, what I really needed was the reminder of why I'm *actually* quitting not just boring stats.
+        <br>
+        If you like DSIB give me a follow on <a href="https://www.linkedin.com/in/lottie-judge-69507916b/" target="_blank">LinkedIn</a> and tell any tech pals to hire me. tysm and remember.. </p>
+      <h4>Don't smoke, it's Bad</h4>
+    </div>
+
+
+  <!-- Button Section -->
+  <!-- Button Section -->
+  <!-- Button Section -->
+
+    <div id="magicButton">
+      <h2>The Magic Button...</h2>
+      <div id="wrapper">
+        <h5>Give the magic button a click to remember why you quit the cigs!</h5>
+      <div id="outputDiv"></div> 
+        <br>
+        <button class="eightBall" onclick="generateAnswer()">Magic Button</button>
+        <br>
+      </div>
+    </div>
+
+  <!-- Breathing -->
+  <!-- breathing -->
+  <!-- breathing -->
+    <div id="wrapbreath">
+    <div id="breathing">
+    <h2>Spot the Breathing dog...</h2>
+    <h4>If you're stressed have a little breath along with spot, he loves the company</h4>
+    <video autoplay muted loop>
+      <source src="Images/the animation crop.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    </div>
+    </div>
+
+  <!-- Gallery and screen savers -->
+  <!-- Gallery and screen savers -->
+  <!-- Gallery and screen savers -->
+    <div id="screenSavers">
+      <h2>Screen savers and downloadables for you...</h2>
+      <h5>sort of like nft's but free and accessible for everyone </h5>
+      <h6>.. so exactly like nft's</h6>
+    </div>
+    <div id="imageGallery">
+      <img src="Images/lines.png" class="galleryImage" onclick="expandImage(this)">
+      <img src="Images/choosegulls.png" class="galleryImage" onclick="expandImage(this)">
+      <img src="Images/Screenshot 2024-03-01 at 18.47.39.png" class="galleryImage" onclick="expandImage(this)">
+    </div>
+    <div id="expandedImageContainer">
+      <img id="expandedImage">
+    </div>
+  <!-- resources -->
+  <!-- resources -->
+  <!-- resources -->
+
+    <div id="resourcesSect">
+        <h2>You're double lovely and you deserve health, <br>here's some real life resources to help you kick the cigs... </h2>
+      <div class="resourceGrid">
+        <div class="resource">
+          <h3><a href="https://www.nhs.uk/better-health/quit-smoking/" target="_blank">The NHS</a></h3>
+          <p>The NHS has loads of handy tips and tricks, they've also basically gamefied quitting smoking with their app. Genius!</p>
+      </div>
+        <div class="resource">
+          <h3><a href="https://www.audible.co.uk/pd/Stop-Smoking-and-Quit-E-Cigarettes-Audiobook/B0101CLWSK?ipRedirectOverride=true&overrideBaseCountry=true&bp_o=true&source_code=PS1PP30DTRIAL453122123006B&gclid=CjwKCAiAivGuBhBEEiwAWiFmYexOpHu0kTowuJ-Ibwk__-BoF-3oNEz9pB1MYhppCUwZIkF38REWchoCcaoQAvD_BwE&gclsrc=aw.ds" target="_blank">Allan Carr's - The Easy Way</a></h3>
+          <p>His language is mildly outdated but this kick started my journey, it's worked for loads of people and I'd say its worth a go! Like with all self help, take what you can, give the rest back. </p>
+        </div>
+        <div class="resource">
+          <h3><a href="https://www.reddit.com/r/stopsmoking/" target="_blank">Reddit</a></h3>
+          <p> Peer support from the reddit folk! It's good to have a scroll through here when you need a reminder or if ytou want to check your nicotine flu symptoms are normal </p>
+        </div>
+        <div class="resource">
+          <h3><a href="https://www.who.int/news-room/fact-sheets/detail/tobacco" target="_blank">WHO</a></h3>
+          <p>It's pretty grim reading tbh, which, sometimes, is exactly what we all need. Get some horrific facts and figures in your eyeballs </p>
+        </div>
+        <br>
+      </div>
+    </div>
+  </main>
+<footer>
+  <div id="contact" >
+  <p>Thanks for visiting! </p>
+  <p>email: Lottiejudge@gmail.com</p>
+  <p>LinkedIn</p>
+  </div>
+</footer>
+</body>
+</html>
+
+
