@@ -211,6 +211,7 @@ button{
   background-color: white;
   margin-left: 5vh;
   margin-right: 5vh;
+  
   /* width: 100vw; */
 
 }
@@ -390,6 +391,9 @@ margin-top: 5vh;
     #about h1 {
       margin-top: 3vh;
     }
+    #breathing{
+    height: 80vh;
+  }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
       width: 90%;
@@ -400,6 +404,10 @@ margin-top: 5vh;
       margin-top: 25vh;
       margin-bottom: 40vh;
     }
+
+  footer{
+    margin-top:60vh;
+  }
 }
 
 /* Media query for Android screens */
@@ -411,6 +419,9 @@ margin-top: 5vh;
     #about h1 {
       margin-top: 3vh;
     }
+    #breathing{
+    height: 80vh;
+  }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
       width: 90%;
@@ -421,6 +432,9 @@ margin-top: 5vh;
       margin-top: 25vh;
       margin-bottom: 40vh;
     }
+    footer{
+    margin-top:60vh;
+  }
 }
 
 /* Media query for tablet screens */
@@ -436,6 +450,9 @@ margin-top: 5vh;
     .wrapper {
       width: 80%; /* Adjust width of wrapper for smaller screens */
     }
+  #breathing{
+    height: 80vh;
+  }
     .resource {
       width: 100%;
     }
@@ -447,4 +464,8 @@ margin-top: 5vh;
       margin-top: 25vh;
       margin-bottom: 70vh;
     }
+  
+    footer{
+    margin-top:60vh;
+  }
 }
