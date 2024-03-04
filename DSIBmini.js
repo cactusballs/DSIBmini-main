@@ -44,7 +44,22 @@ function generateAnswer() {
   eightBall.style.color = 'green';
 } 
 
+// play button for smaller screens autoplay for desktop 
 
+window.addEventListener('load', function(){
+  var video = document.getElementById('spotVideo');
+  var playButton = document.getElementById('playButton');
+
+  if (window.innerWidth <=768){
+    playButton.style.display = 'block';
+    video.style.display = 'none';
+  } else {
+    video.play();
+  }
+});
+
+
+  
 // image gallwery
 function expandImage(image) {
   var expandedImageContainer = document.getElementById("expandedImageContainer");
