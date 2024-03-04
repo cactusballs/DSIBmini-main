@@ -45,10 +45,13 @@ function generateAnswer() {
 } 
 
 
+// image gallwery
 function expandImage(image) {
   var expandedImageContainer = document.getElementById("expandedImageContainer");
   var expandedImage = document.getElementById("expandedImage");
+  
   expandedImage.src = image.src;
+  
   expandedImageContainer.style.display = "block";
 }
 
@@ -56,7 +59,19 @@ document.getElementById("expandedImageContainer").addEventListener("click", func
   this.style.display = "none";
 });
 
+window.addEventListener("load", function() {
+  console.log("Page loaded");
+  var firstImage = document.querySelector("#imageGallery .galleryImage");
+  console.log(firstImage);
+  if (firstImage) {
+    expandImage(firstImage);
+  } else {
+    console.log("No images found in the gallery.");
+  }
+});
 
+
+// color changing for resources
 
 let colorChange = document.querySelectorAll('.resource');
 
