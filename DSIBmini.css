@@ -5,20 +5,20 @@ html{
   margin-left: 0;
   margin-right: 0;
   box-sizing: border-box;
-  padding:0
+  padding:0;
 
 }
+
 body{
+ 
   font-family: 'Spartan', 'Futura', sans-serif;
-  font-size: 1em;
+  font-size: 18px;
   color:  #254252;
   text-align: center;
 
 }
 
-  /* navbar */
-  /* navbar */
-  /* navbar */
+
 
 li {
   list-style: none;
@@ -128,10 +128,7 @@ li {
   padding:0;
   margin-bottom: 20%;
   text-align: left;
-
-
 }
-
 
 /* About */
 /* About */
@@ -140,33 +137,21 @@ li {
 #about{
   background-color: rgba(2, 54, 83, 0.8);
   color: white;
-  padding: 1px;
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+  padding: 2px;
+  margin: 25vh 0;
   height: 60%;
   width: 100vw;
+  text-align: center;
 }
 
 #about h1{
-  text-align: left;
-  font-size: 2vw;
-  margin-left: 1%;
-  margin-top: 6vh;
+  margin-top: 4%;
   
 }
 
 #about p {
-  text-align: center;
-  font-size: 1rem;
-
-
-  
-}
-
-#about h4 {
-  text-align: center;
-  margin-top: 0%;
-  font-size: 1rem;
+  font-size: 1.2rem;
+ 
   
 }
 
@@ -179,19 +164,14 @@ li {
 /* Div for magic box  */
 /* Div for magic box  */
 
-#magicButton h2{
-  margin-left: 2%;
-  
-}
 
 #wrapper {
-  text-align:  center;
   margin: 10% auto auto auto;
   width: 60vw;
   border: 10px solid rgb(255,142,0);
   padding: 10px;
-  margin-top: 10vh;
-  margin-bottom: 25vh;
+  margin-top: 10%;
+  margin-bottom: 25%;
 }
 
 #wrapper h5{
@@ -288,8 +268,9 @@ margin-top: 12vh;
 #resourcesSect{
   width: 100%;
   margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   height: 50vh;
+
 }
 
 
@@ -321,17 +302,17 @@ margin-top: 12vh;
   content: "";
   display: table;
   clear: both;
+
 }
 
-/* Footer below  */
-/* Footer below  */
-/* Footer below  */
-
-
-footer{
-  bottom: 0%;
-  position: absolute;
+.border {
+  border-bottom: 1px solid #101010; /* Adjust thickness and color as needed */
+  width: 100%;
 }
+/* Footer below  */
+/* Footer below  */
+/* Footer below  */
+
 
 /* Media Queries */
 /* Media Queries */
@@ -387,33 +368,14 @@ footer{
     margin-left: 5%;
   }
  
-  #about h1 {
-    text-align: center;
-    font-size: 3vw;
-    margin-left: 0;
-  }
- 
 }
 
 
 @media only screen and (min-width: 1200px) {
-  #about {
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-  }
+#about p {
+  margin: 0 100px;
+}
 
-  #about h1{
-    text-align: left;
-    font-size: 2vw;
-    margin-left: 1%;
-  }
-  #about p {
-    margin: 2% 10%;
-    text-align: center;
-  }
-
- 
 
 }
 
@@ -423,21 +385,25 @@ footer{
   text-align: center;
  }
   #about h1 {
-    font-size: 4vw; /* Adjust as needed */
     margin-top: 3vh;
   }
 
- 
   .resourceGrid {
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
     margin-left: 5%;
   }
 
+  #resourcesSect{
+    width: 100%;
+    margin-top: 25vh;
+    margin-bottom: 40vh;
+  
+
+}
 }
 
-
-@media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 480px) {
 
 
   body {
@@ -455,9 +421,6 @@ footer{
     width: 80%; /* Adjust width of wrapper for smaller screens */
   }
 
-  #about h1 {
-    font-size: 5vw; /* Adjust as needed */
-  }
 
   .resource {
     width: 100%;
@@ -466,4 +429,13 @@ footer{
   .resourceGrid {
     grid-gap: 20px;
   }
+
+  #resourcesSect{
+    width: 100%;
+    margin-top: 25vh;
+    margin-bottom: 70vh;
+ 
 }
+
+ }
+
