@@ -380,66 +380,81 @@ margin-top: 12vh;
 }
 
 
-@media only screen and (max-width: 768px) {
- body{
-  text-align: center;
- }
-  #about h1 {
-    margin-top: 3vh;
+@media only screen 
+  and (device-width: 390px) /* iPhone viewport width in portrait mode */
+  and (device-height: 844px) /* iPhone viewport height in portrait mode */
+  and (-webkit-device-pixel-ratio: 3) /* Pixel ratio for Retina displays */
+  and (orientation: portrait) {
+    body {
+      text-align: center;
+    }
+    #about h1 {
+      margin-top: 3vh;
+    }
+    .resourceGrid {
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;
+      margin-left: 5%;
+    }
+    #resourcesSect {
+      width: 100%;
+      margin-top: 25vh;
+      margin-bottom: 40vh;
+    }
+    footer {
+    margin-top: 100vh;
   }
-
-  .resourceGrid {
-    grid-template-columns: repeat(1, 1fr);
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  #resourcesSect{
-    width: 100%;
-    margin-top: 25vh;
-    margin-bottom: 40vh;
-  
-
-}
-}
-
- @media only screen and (max-width: 480px) {
-
-
-  body {
-    font-size: 1em; /* Adjust font size for smaller screens */
-    text-align: center;
-  }
-
-  button{
-     border: none;
-     
-  }
- 
-
-  .wrapper {
-    width: 80%; /* Adjust width of wrapper for smaller screens */
-  }
-
-
-  .resource {
-    width: 100%;
-  }
-
-  .resourceGrid {
-    grid-gap: 20px;
-  }
-
-  #resourcesSect{
-    width: 100%;
-    margin-top: 25vh;
-    margin-bottom: 70vh;
- 
 }
 
-footer{
-  margin-top: 60vh;
+/* Media query for Android screens */
+@media only screen 
+  and (max-width: 768px) /* Typical max width for tablets and smaller Android devices */ {
+    body {
+      text-align: center;
+    }
+    #about h1 {
+      margin-top: 3vh;
+    }
+    .resourceGrid {
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;
+      margin-left: 5%;
+    }
+    #resourcesSect {
+      width: 100%;
+      margin-top: 25vh;
+      margin-bottom: 40vh;
+    }
+  footer {
+    margin-top: 100vh;
+  }
 }
 
- }
-
+/* Media query for tablet screens */
+@media only screen 
+  and (max-width: 480px) /* Typical max width for smaller tablets */ {
+    body {
+      font-size: 1em; /* Adjust font size for smaller screens */
+      text-align: center;
+    }
+    button {
+      border: none;
+    }
+    .wrapper {
+      width: 80%; /* Adjust width of wrapper for smaller screens */
+    }
+    .resource {
+      width: 100%;
+    }
+    .resourceGrid {
+      grid-gap: 20px;
+    }
+    #resourcesSect {
+      width: 100%;
+      margin-top: 25vh;
+      margin-bottom: 70vh;
+    }
+    footer {
+    margin-top: 100vh;
+  }
+}
