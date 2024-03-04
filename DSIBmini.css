@@ -225,7 +225,10 @@ width: 50vw;
 overflow: hidden;
 justify-self: center;
 margin-top: 12vh;
+}
 
+#playButton {
+  display: none; /* Hide the play button by default */
 }
 
 /* Div for Gallery */
@@ -391,6 +394,13 @@ margin-top: 12vh;
     #about h1 {
       margin-top: 3vh;
     }
+   #myVideo {
+    display: none; /* Hide the video on smaller screens */
+  }
+  
+  #playButton {
+    display: block; 
+  }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
       width: 90%;
@@ -415,6 +425,13 @@ margin-top: 12vh;
     #about h1 {
       margin-top: 3vh;
     }
+   #myVideo {
+    display: none; /* Hide the video on smaller screens */
+  }
+  
+  #playButton {
+    display: block; 
+  }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
       width: 90%;
@@ -430,19 +447,22 @@ margin-top: 12vh;
   }
 }
 
-/* Media query for tablet screens */
+/* Media query for tablets */
 @media only screen 
-  and (max-width: 480px) /* Typical max width for smaller tablets */ {
+  and (max-width: 480px) 
     body {
-      font-size: 1em; /* Adjust font size for smaller screens */
+      font-size: 1em; 
       text-align: center;
     }
     button {
       border: none;
     }
     .wrapper {
-      width: 80%; /* Adjust width of wrapper for smaller screens */
+      width: 80%; 
     }
+   #playButton {
+    display: block; 
+  }
     .resource {
       width: 100%;
     }
