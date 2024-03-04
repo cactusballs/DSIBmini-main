@@ -44,27 +44,7 @@ function generateAnswer() {
   eightBall.style.color = 'green';
 } 
 
-// play button for smaller screens autoplay for desktop 
 
-var video = document.getElementById("spotVideo");
-var playButton = document.getElementById("playButton");
-
-if (!window.matchMedia("(max-width: 768px)").matches) {
-  playButton.style.display = "none";
-  video.play(); // Autoplay video on desktop
-}
-
-/
-playButton.addEventListener("click", function() {
-  video.play();
-  playButton.style.display = "none"; // Hide play button after click
-});
-
-
-video.addEventListener("ended", function() {
-  video.currentTime = 0; // Restart video
-  video.play(); // Play video again
-});
 
 
   
