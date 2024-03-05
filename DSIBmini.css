@@ -224,7 +224,7 @@ height: 40%;
 width: 50vw;
 overflow: hidden;
 justify-self: center;
-margin-top: 8vh;
+margin-top: 6vh;
 }
 
 
@@ -392,8 +392,8 @@ margin-top: 8vh;
       margin-top: 3vh;
     }
    video{
-margin-top: 4vh;
-}
+    margin-top: 1vh;
+    }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
       width: 90%;
@@ -419,7 +419,7 @@ margin-top: 4vh;
       margin-top: 3vh;
     }
     video{
-      margin-top: 4vh;
+      margin-top: 1vh;
     }
   
     .resourceGrid {
@@ -451,7 +451,7 @@ margin-top: 4vh;
       width: 80%; 
     }
      video{
-      margin-top: 4vh;
+      margin-top: 1vh;
       }
  
     .resource {
