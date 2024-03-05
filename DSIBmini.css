@@ -205,13 +205,14 @@ button{
 }
 #breathing{
   margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-bottom: 20vh;
   display: grid;
   /* justify-content: center; */
   border-radius: 10px;
   background-color: white;
   margin-left: 5vh;
   margin-right: 5vh;
+  
   /* width: 100vw; */
 
 }
@@ -394,6 +395,9 @@ margin-top: 6vh;
    video{
     margin-top: 1vh;
     }
+    #breathing{
+      height: 80vh;
+    }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
       width: 90%;
@@ -420,6 +424,9 @@ margin-top: 6vh;
     }
     video{
       margin-top: 1vh;
+    }
+     #breathing{
+      height: 80vh;
     }
   
     .resourceGrid {
@@ -453,6 +460,9 @@ margin-top: 6vh;
      video{
       margin-top: 1vh;
       }
+    #breathing{
+      height: 80vh;
+    }
  
     .resource {
       width: 100%;
