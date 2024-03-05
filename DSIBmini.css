@@ -396,7 +396,7 @@ margin-top: 6vh;
     margin-top: 1vh;
     }
     #breathing{
-      height: 100vh;
+      height: 90vh;
     }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
@@ -426,7 +426,7 @@ margin-top: 6vh;
       margin-top: 1vh;
     }
      #breathing{
-      height: 100vh;
+      height: 90vh;
     }
   
     .resourceGrid {
@@ -461,7 +461,7 @@ margin-top: 6vh;
       margin-top: 1vh;
       }
     #breathing{
-      height: 100vh;
+      height: 90vh;
     }
  
     .resource {
