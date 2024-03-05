@@ -205,7 +205,7 @@ button{
 }
 #breathing{
   margin-top: 25vh;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
   display: grid;
   /* justify-content: center; */
   border-radius: 10px;
@@ -396,7 +396,7 @@ margin-top: 6vh;
     margin-top: 1vh;
     }
     #breathing{
-      height: 80vh;
+      height: 100vh;
     }
     .resourceGrid {
       grid-template-columns: repeat(1, 1fr);
@@ -426,7 +426,7 @@ margin-top: 6vh;
       margin-top: 1vh;
     }
      #breathing{
-      height: 80vh;
+      height: 100vh;
     }
   
     .resourceGrid {
@@ -461,7 +461,7 @@ margin-top: 6vh;
       margin-top: 1vh;
       }
     #breathing{
-      height: 80vh;
+      height: 100vh;
     }
  
     .resource {
