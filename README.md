@@ -8,6 +8,7 @@ JS used for styling
 JS image gallery tab 
 CSS shapes
 Grid layout 
-
+WIP 
+live site - https://cactusballs.github.io/DSIBmini-main/
 
 
