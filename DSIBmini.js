@@ -78,13 +78,14 @@ window.addEventListener("load", function() {
 
 let colorChange = document.querySelectorAll('.resource');
 
-for (let i = 0; i < colorChange.length; i++) {
-  colorChange[i].addEventListener('mouseover', function() {
-    colorChange[i].style.backgroundColor = 'rgb(255,142,0)';
+
+for (let color of colorChange) {
+  color.addEventListener('mouseover', function() {
+    this.style.backgroundColor = 'rgb(255,142,0)';
   });
 
-  colorChange[i].addEventListener('mouseout', function() {
-    colorChange[i].style.backgroundColor = ''; 
+  color.addEventListener('mouseout', function() {
+    this.style.backgroundColor = ''; 
   });
 }
 
