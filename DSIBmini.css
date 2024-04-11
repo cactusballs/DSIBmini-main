@@ -15,6 +15,7 @@ body{
   font-size: 18px;
   color:  #254252;
   text-align: center;
+  overflow-x: hidden;
 
 }
 
@@ -134,8 +135,9 @@ li {
 /* About */
 /* About */
 
+
 #about{
-  background-color: rgba(2, 54, 83, 0.8);
+  /* background-color: rgba(2, 54, 83, 0.8); */
   color: white;
   padding: 2px;
   margin: 25vh 0;
@@ -199,20 +201,21 @@ button{
   margin-top: 25vh;
   margin-bottom: 25vh;
   display: grid;
-  width: 100vw;
+  width: 100%;
 
  
 }
 #breathing{
   margin-top: 25vh;
-  margin-bottom: 25vh;
+  margin-bottom: 30vh;
   display: grid;
-  /* justify-content: center; */
+
   border-radius: 10px;
   background-color: white;
   margin-left: 5vh;
   margin-right: 5vh;
-  /* width: 100vw; */
+  
+
 
 }
 
@@ -224,9 +227,9 @@ height: 40%;
 width: 50vw;
 overflow: hidden;
 justify-self: center;
-margin-top: 12vh;
-
+margin-top: 6vh;
 }
+
 
 /* Div for Gallery */
 /* Div for Gallery */
@@ -371,71 +374,102 @@ margin-top: 12vh;
 }
 
 
-@media only screen and (min-width: 1200px) {
-#about p {
-  margin: 0 100px;
+
+
+
+@media only screen 
+  and (device-width: 390px) /* iPhone viewport width in portrait mode */
+  and (device-height: 844px) /* iPhone viewport height in portrait mode */
+  and (-webkit-device-pixel-ratio: 3) /* Pixel ratio */
+  and (orientation: portrait) {
+    body {
+      text-align: center;
+    }
+    #about h1 {
+      margin-top: 3vh;
+    }
+   video{
+    margin-top: 1vh;
+    }
+    #breathing{
+      height: 90vh;
+    }
+    .resourceGrid {
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;
+      margin-left: 5%;
+    }
+    #resourcesSect {
+      width: 100%;
+      margin-top: 25vh;
+      margin-bottom: 40vh;
+    }
+    footer {
+    margin-top: 100vh;
+  }
 }
 
-
-}
-
-
-@media only screen and (max-width: 768px) {
- body{
-  text-align: center;
- }
-  #about h1 {
-    margin-top: 3vh;
-  }
-
-  .resourceGrid {
-    grid-template-columns: repeat(1, 1fr);
-    width: 90%;
-    margin-left: 5%;
-  }
-
-  #resourcesSect{
-    width: 100%;
-    margin-top: 25vh;
-    margin-bottom: 40vh;
+/* Media query for Android screens */
+@media only screen  and (max-width: 768px)  {
+    body {
+      text-align: center;
+    }
+    #about h1 {
+      margin-top: 3vh;
+    }
+    video{
+      margin-top: 1vh;
+    }
+     #breathing{
+      height: 90vh;
+    }
   
-
-}
-}
-
- @media only screen and (max-width: 480px) {
-
-
-  body {
-    font-size: 1em; /* Adjust font size for smaller screens */
-    text-align: center;
+    .resourceGrid {
+      grid-template-columns: repeat(1, 1fr);
+      width: 90%;
+      margin-left: 5%;
+    }
+    #resourcesSect {
+      width: 100%;
+      margin-top: 25vh;
+      margin-bottom: 40vh;
+    }
+  footer {
+    margin-top: 100vh;
   }
+}
 
-  button{
-     border: none;
-     
-  }
+/* Media query for tablets */
+@media only screen and (max-width: 480px) {
+    body {
+      font-size: 1em; 
+      text-align: center;
+    }
+    button {
+      border: none;
+    }
+    .wrapper {
+      width: 80%; 
+    }
+     video{
+      margin-top: 1vh;
+      }
+    #breathing{
+      height: 90vh;
+    }
  
-
-  .wrapper {
-    width: 80%; /* Adjust width of wrapper for smaller screens */
+    .resource {
+      width: 100%;
+    }
+    .resourceGrid {
+      grid-gap: 20px;
+    }
+    #resourcesSect {
+      width: 100%;
+      margin-top: 25vh;
+      margin-bottom: 70vh;
+    }
+    footer {
+    margin-top: 100vh;
   }
-
-
-  .resource {
-    width: 100%;
-  }
-
-  .resourceGrid {
-    grid-gap: 20px;
-  }
-
-  #resourcesSect{
-    width: 100%;
-    margin-top: 25vh;
-    margin-bottom: 70vh;
- 
 }
-
- }
-

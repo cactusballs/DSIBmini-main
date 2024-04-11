@@ -45,10 +45,15 @@ function generateAnswer() {
 } 
 
 
+
+// image galleyr 
+
 function expandImage(image) {
   var expandedImageContainer = document.getElementById("expandedImageContainer");
   var expandedImage = document.getElementById("expandedImage");
+  
   expandedImage.src = image.src;
+  
   expandedImageContainer.style.display = "block";
 }
 
@@ -56,17 +61,30 @@ document.getElementById("expandedImageContainer").addEventListener("click", func
   this.style.display = "none";
 });
 
+window.addEventListener("load", function() {
+  console.log("Page loaded");
+  var firstImage = document.querySelector("#imageGallery .galleryImage");
+  console.log(firstImage);
+  if (firstImage) {
+    expandImage(firstImage);
+  } else {
+    console.log("No images found in the gallery.");
+  }
+});
+
+
 
 
 let colorChange = document.querySelectorAll('.resource');
 
-for (let i = 0; i < colorChange.length; i++) {
-  colorChange[i].addEventListener('mouseover', function() {
-    colorChange[i].style.backgroundColor = 'rgb(255,142,0)';
+
+for (let color of colorChange) {
+  color.addEventListener('mouseover', function() {
+    this.style.backgroundColor = 'rgb(255,142,0)';
   });
 
-  colorChange[i].addEventListener('mouseout', function() {
-    colorChange[i].style.backgroundColor = ''; // Revert to original background color (or remove the inline style)
+  color.addEventListener('mouseout', function() {
+    this.style.backgroundColor = ''; 
   });
 }
 
