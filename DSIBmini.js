@@ -48,6 +48,10 @@ function generateAnswer() {
 
 // image galleyr 
 
+
+
+  
+// image gallwery
 function expandImage(image) {
   var expandedImageContainer = document.getElementById("expandedImageContainer");
   var expandedImage = document.getElementById("expandedImage");
@@ -73,7 +77,19 @@ window.addEventListener("load", function() {
 });
 
 
+window.addEventListener("load", function() {
+  console.log("Page loaded");
+  var firstImage = document.querySelector("#imageGallery .galleryImage");
+  console.log(firstImage);
+  if (firstImage) {
+    expandImage(firstImage);
+  } else {
+    console.log("No images found in the gallery.");
+  }
+});
 
+
+// color changing for resources
 
 let colorChange = document.querySelectorAll('.resource');
 

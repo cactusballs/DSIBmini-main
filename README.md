@@ -1,9 +1,10 @@
-# DSIBmini
+#DSIB
 
-##DSIBmini is a codecacdemy project I built to generate a random message onclick. 
-I chose to create an app to help with quitting smoking. 
+##DSIB is a website I built to help with smoking cessation and for me to practice websites!
 Features - 
-Random Message generator in JavaScript 
-Use of CSS shapes 
+Random Message generator in JavaScript.
+Responsive and dynamic code.
+JS used for styling, JS image gallery tab.
+WIP live site - https://cactusballs.github.io/DSIBmini-main/
 
 
