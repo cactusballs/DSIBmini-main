@@ -2,8 +2,6 @@
 
 html{
   background-color: white;
-  margin-left: 0;
-  margin-right: 0;
   box-sizing: border-box;
   padding:0;
 
@@ -16,6 +14,7 @@ body{
   color:  #254252;
   text-align: center;
   overflow-x: hidden;
+  margin: 0;
 
 }
 
